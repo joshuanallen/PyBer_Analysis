@@ -1,9 +1,5 @@
 # PyBer Ride and Fare Data Analysis
 
-Overview of the analysis: Explain the purpose of the new analysis.
-Results: Using images from the summary DataFrame and multiple-line chart, describe the differences in ride-sharing data among the different city types.
-Summary: Based on the results, provide three business recommendations to the CEO for addressing any disparities among the city types.
-
 ## Project Overview
 Pyber CEO, V. Isualize, has requested an analysis of internal ride-sharing data to find disparities in drivers and fares between urban, suburban, and rural cities. V. Isualize has requested the following data:
 
@@ -16,6 +12,8 @@ Pyber CEO, V. Isualize, has requested an analysis of internal ride-sharing data 
 2. Time-series graph of the weekly fares for each city type 
 3. Recommend action items based on the results of the action items
 
+Ride data has been provided for the timeframe of January 1, 2019 to April 30, 2019 and includes 2 data sources. Ride data source includes city ride was started, datetime data, fare, and ride id. City data source provided lists cities in which rides were taken, number of drivers in the city, and the type of city based on the urban, suburban, and rural categories.
+
 ## Resources
 - Data Source: ride_data.csv, city_data.csv
 - Software: Python 3.7.6, Jupyter Notebook, Matplotlib, 
@@ -27,12 +25,12 @@ Pyber CEO, V. Isualize, has requested an analysis of internal ride-sharing data 
 Picture 1.1 below shows Pyber's ride-sharing data outlining ride, driver, and fare analysis broken down for urban, suburban, and rural cities from January 1, 2019 to April 30, 2019.
 
 **Picture 1.1** Pyber ride-sharing summary by city type
-*****Insert Summary DF ******
+![Pyber ride-sharing summary by city type](https://github.com/joshuanallen/PyBer_Analysis/blob/d0b9d91ca9236b6b80e4e307c56548ca5b67a5e5/analysis/Pyber_Ride_Sharing_Data_Summary_01012019_to_04012019.png)
 
 Picture 1.2 below shows the total weekly fares collected for each respective city type from January 1, 2019 to April 30, 2019.
 
 **Picture 1.2** Pyber total weekly fares by city type
-****insert timeseries graph ***
+![Pyber total weekly fares by city type](https://github.com/joshuanallen/PyBer_Analysis/blob/d0b9d91ca9236b6b80e4e307c56548ca5b67a5e5/analysis/Total_fare_by_city_type.png)
 
 #### Urban city type
 From Picture 1.1 we see the following trends for urban cities:
@@ -74,13 +72,13 @@ Rural rides have the highest fares due to driver scarcity or longer ride average
 
 3. Augment fare pricing for each demo to align pricing across the three market types to ensure drivers in all are receiving equitable pay for the same work, which encourages drivers to stay in their own market and locality decreasing urban congestion, which could potentially help with public perception of ride-sharing adoption.
 
-### Limitations of data and script
-Need larger timeframe for dataset to evaulate seasonality for demand across wider timeframe.
+### Limitations of data
+1. No clear definition of urban, suburban, and rural data to audit qualifications for each category
+2. Larger timeframe for dataset can help to evaulate seasonality for demand across wider timeframe.
+3. Wait time and demand level data for each ride can help determine if driver needs are met for each city demographic.
+4. Need ride distance data to adjust for per distance cost analysis, which can make comparison more accurate eliminating geographic differences between city types.
+5. No data around fare rates differences within each city demo (i.e. surge pricing, discounted rates) that could affect rate data balance.
 
-need wait time and demand level data for each ride to determine if driver needs are met for each city demographic.
-
-Need ride distance data to adjust for per distance cost analysis, which can make comparison more accurate eliminating geographic differences between city types.
-
-No data around fare rates differences within each city demo (i.e. surge pricing, discounted rates) that could affect rate data balance.
-
-Consider using AI modeling to optimize ride availability and fulfillment and driver earnings based on demand to further this analysis. The following article outlines a process to consider: https://venturebeat.com/2020/06/24/researchers-use-ai-and-simulation-to-optimize-ride-sharing-earnings/
+### Future iterations of script
+1. Current script is limited to time series analysis. May want to augment to geographical plotting to find under or overserved geographic areas based on data.
+2. Consider using AI modeling to optimize ride availability and fulfillment and driver earnings based on demand to further this analysis. The following article outlines a process to consider: https://venturebeat.com/2020/06/24/researchers-use-ai-and-simulation-to-optimize-ride-sharing-earnings/
