@@ -25,11 +25,14 @@ Ride data has been provided for the timeframe of January 1, 2019 to April 30, 20
 Picture 1.1 below shows Pyber's ride-sharing data outlining ride, driver, and fare analysis broken down for urban, suburban, and rural cities from January 1, 2019 to April 30, 2019.
 
 **Picture 1.1** Pyber ride-sharing summary by city type
+
 ![Pyber ride-sharing summary by city type](https://github.com/joshuanallen/PyBer_Analysis/blob/d0b9d91ca9236b6b80e4e307c56548ca5b67a5e5/analysis/Pyber_Ride_Sharing_Data_Summary_01012019_to_04012019.png)
+
 
 Picture 1.2 below shows the total weekly fares collected for each respective city type from January 1, 2019 to April 30, 2019.
 
 **Picture 1.2** Pyber total weekly fares by city type
+
 ![Pyber total weekly fares by city type](https://github.com/joshuanallen/PyBer_Analysis/blob/d0b9d91ca9236b6b80e4e307c56548ca5b67a5e5/analysis/Total_fare_by_city_type.png)
 
 #### Urban city type
